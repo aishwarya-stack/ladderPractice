@@ -5,7 +5,9 @@ public class ladderNo {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("Welcome ");
-		
+		while(position<=100)
+			
+    	
 		{
 			//System.out.println("Welcome ");
 			//System.out.println("Welcome new player");
@@ -35,7 +37,7 @@ public class ladderNo {
 			         }
 			         if(position<0)
 			         {
-			        	 position=1; 
+			        	 position=0; 
 			         }
 		             break;
 		    
@@ -45,7 +47,9 @@ public class ladderNo {
 		             
 		             
 		             }
+			System.out.println("you are player on position:"+position);
 		
 		     }
+		System.out.println("you are now reached"+position);
 }
 }
