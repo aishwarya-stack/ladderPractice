@@ -4,6 +4,7 @@ public class ladderNo {
 	static int position=0;
 	static int number=0;
 	static int new_position=0;
+	static int counter=0;
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("Welcome ");
@@ -29,7 +30,7 @@ public class ladderNo {
 					        position=position-number;
 				            
 					     }
-			          
+			          counter++;
 		             break;
 		    case 2:  System.out.println("here is snake");
 		              number=(int)(Math.random()*6)+1;
@@ -46,6 +47,7 @@ public class ladderNo {
 			         {
 			        	 position=0; 
 			         }
+			         counter++;
 		             break;
 		    
 		    default:System.out.println("no switch");
@@ -82,6 +84,7 @@ public class ladderNo {
 		    	 System.out.println("you are need :"+number_need);
 		    	 int choice1=(int)(Math.random()*3)+1;
 		    	 System.out.println("you ar get number:"+choice1);
+		    	 counter++;
 		    	 if(choice1!=number_need ) 
 		    	 {
 		    	 //roll the dice
@@ -90,6 +93,7 @@ public class ladderNo {
 		    	  {
 		    		  choice2=(int)(Math.random()*3)+1;
 		    	 System.out.println("you ar getting number:"+choice2);
+		    	 counter++;
 		    	 if(number_need==choice2)
 		    	  {
 		    		  System.out.println("you are win"); 
@@ -113,6 +117,7 @@ public class ladderNo {
 }
 
 System.out.println("you are win");
+System.out.println("you are win and counter is"+counter);
 
 
 
